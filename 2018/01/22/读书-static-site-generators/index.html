@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>读书-static-site-generators | 大数据算命工程师的日常</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="chapter 1 What are Static sites? 1.1 CMS 1.1.1 国内有没有大机构用 Drupal 来构建官网？ https://www.zhihu.com/question/19648357   1.2 dynamic aspects 1.2.1 对静态站点添加动态内容的一些服务 1.2.2 BAAS: backend as a service例子  https">
+<meta name="keywords" content="static site generators, cms">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读书-static-site-generators">
+<meta property="og:url" content="https://chesterwang.github.io/blog.github.io/2018/01/22/读书-static-site-generators/index.html">
+<meta property="og:site_name" content="大数据算命工程师的日常">
+<meta property="og:description" content="chapter 1 What are Static sites? 1.1 CMS 1.1.1 国内有没有大机构用 Drupal 来构建官网？ https://www.zhihu.com/question/19648357   1.2 dynamic aspects 1.2.1 对静态站点添加动态内容的一些服务 1.2.2 BAAS: backend as a service例子  https">
+<meta property="og:updated_time" content="2018-01-22T15:36:30.028Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="读书-static-site-generators">
+<meta name="twitter:description" content="chapter 1 What are Static sites? 1.1 CMS 1.1.1 国内有没有大机构用 Drupal 来构建官网？ https://www.zhihu.com/question/19648357   1.2 dynamic aspects 1.2.1 对静态站点添加动态内容的一些服务 1.2.2 BAAS: backend as a service例子  https">
+  
+    <link rel="alternate" href="/blog.github.io/atom.xml" title="大数据算命工程师的日常" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/blog.github.io/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog.github.io/" id="logo">大数据算命工程师的日常</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/blog.github.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog.github.io/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://chesterwang.github.io/blog.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-读书-static-site-generators" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog.github.io/2018/01/22/读书-static-site-generators/" class="article-date">
+  <time datetime="2018-01-22T12:57:01.000Z" itemprop="datePublished">2018-01-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      读书-static-site-generators
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+<ul>
+<li><a href="#chapter-1-what-are-static-sites">chapter 1 What are Static sites?</a><ul>
+<li><a href="#11-cms">1.1 CMS</a><ul>
+<li><a href="#111-国内有没有大机构用-drupal-来构建官网-httpswwwzhihucomquestion19648357">1.1.1 国内有没有大机构用 Drupal 来构建官网？ https://www.zhihu.com/question/19648357</a></li>
+</ul>
+</li>
+<li><a href="#12-dynamic-aspects">1.2 dynamic aspects</a><ul>
+<li><a href="#121-对静态站点添加动态内容的一些服务">1.2.1 对静态站点添加动态内容的一些服务</a></li>
+<li><a href="#122-baas-backend-as-a-service例子-httpswwwzhihucomquestion22098754-这里给出一些baas服务提供商">1.2.2 BAAS: backend as a service例子  https://www.zhihu.com/question/22098754 这里给出一些BaaS服务提供商</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /code_chunk_output -->
+<h1 id="chapter-1-What-are-Static-sites"><a href="#chapter-1-What-are-Static-sites" class="headerlink" title="chapter 1 What are Static sites?"></a>chapter 1 What are Static sites?</h1><h2 id="1-1-CMS"><a href="#1-1-CMS" class="headerlink" title="1.1 CMS"></a>1.1 CMS</h2><ul>
+<li>CMS: To this day, most of the content published on the Web runs through some form of content Management system. Popular open source options include <strong>Drupal, Joomla, Typo3</strong>. Nowadays, these systems typically handle much more than simply content creation and publication, with features such as complex roles and access control, workflow management, document management, and syndication<h3 id="1-1-1-国内有没有大机构用-Drupal-来构建官网？-https-www-zhihu-com-question-19648357"><a href="#1-1-1-国内有没有大机构用-Drupal-来构建官网？-https-www-zhihu-com-question-19648357" class="headerlink" title="1.1.1 国内有没有大机构用 Drupal 来构建官网？ https://www.zhihu.com/question/19648357"></a>1.1.1 国内有没有大机构用 Drupal 来构建官网？ <a href="https://www.zhihu.com/question/19648357" target="_blank" rel="noopener">https://www.zhihu.com/question/19648357</a></h3></li>
+<li>Drupal是cms中比较倾向二次开发的一种，国内的一般网站比较习惯于phpcms之类全套都做好，只需要一个管理员之类的。需求不合。</li>
+<li>从用户体验ue来说，逻辑性强，简洁，所谓less is more。drupal里有view,contenttype,menu,block,region这些概念，就像一块块积木，搭起来以后使页面层层分明。模块只有你想不到的，没有做不到的，还可以在已知模块下进行二次开发。话说，我喜欢在drupal里写js.以上全是个人拙见，</li>
+<li>学Drupal需要具有良好的php功底，而且英语也得跟上，否则你在国内这些论坛查不出来太多有深度的东西，而且你问个问题经常石沉大海，国内圈子感觉不够活跃。而且大部分都是讲Drupal主题开发，偏前端，讲模块开发的感觉都是浅尝辄止，给你讲个hook然后讲几个api和变量就完事了，没有太好的实例。</li>
+<li>国内的cms用过动易、supersite、phpcms、dedecms，后来转向drupal。两相比较的话，感觉国内cms在系统架构、代码严谨性、文档完整性、社区支持方面有差距。</li>
+<li>Drupal based Education Sites <a href="https://groups.drupal.org/education-sites#China" target="_blank" rel="noopener">https://groups.drupal.org/education-sites#China</a></li>
+<li>dedecms 好比美图秀秀,所见即所得,你可以无任何技术基础就可以通过后台配置搭建一个网站 drupal 好比photoshop ,需要具备一定专业技能你才能做出一个网站.</li>
+<li>dedecms不必说，上不得台面，二次开发时你会发现，最基本的数据库结构和权限控制都是最低级，后期几乎无法扩展的（我们目前在重写整个系统）；Discuz! 算是业界良心产品，</li>
+<li>Chrome Sniffer Plus: chrome 插件 可以解析出网站用的什么技术,可以阅读一下源码</li>
+<li>Wappalyzer 类似的插件</li>
+<li>为什么国内的中小网站都是用 Discuz! 或者 Phpwind 而不用 WordPress / Joomla / Drupal 呢？  <a href="https://www.zhihu.com/question/20813536/answer/36577433" target="_blank" rel="noopener">https://www.zhihu.com/question/20813536/answer/36577433</a></li>
+<li><a href="https://www.zhihu.com/question/23580483/answer/26518536" target="_blank" rel="noopener">https://www.zhihu.com/question/23580483/answer/26518536</a> 分析drupal wordpress joomla 三大系统优缺点？</li>
+</ul>
+<h2 id="1-2-dynamic-aspects"><a href="#1-2-dynamic-aspects" class="headerlink" title="1.2 dynamic aspects"></a>1.2 dynamic aspects</h2><h3 id="1-2-1-对静态站点添加动态内容的一些服务"><a href="#1-2-1-对静态站点添加动态内容的一些服务" class="headerlink" title="1.2.1 对静态站点添加动态内容的一些服务"></a>1.2.1 对静态站点添加动态内容的一些服务</h3><ul>
+<li>Disqus, Livefyre, or Facebook for comments</li>
+<li>Wufoo or Google for forms</li>
+<li>Google, Swiftype, or AddSearch for search</li>
+<li>Discourse for forums    <h3 id="1-2-2-BAAS-backend-as-a-service例子-https-www-zhihu-com-question-22098754-这里给出一些BaaS服务提供商"><a href="#1-2-2-BAAS-backend-as-a-service例子-https-www-zhihu-com-question-22098754-这里给出一些BaaS服务提供商" class="headerlink" title="1.2.2 BAAS: backend as a service例子  https://www.zhihu.com/question/22098754 这里给出一些BaaS服务提供商"></a>1.2.2 BAAS: backend as a service例子  <a href="https://www.zhihu.com/question/22098754" target="_blank" rel="noopener">https://www.zhihu.com/question/22098754</a> 这里给出一些BaaS服务提供商</h3></li>
+<li>后台数据存储<ol>
+<li>StackMob Product | StackMob</li>
+<li>Parse  Products</li>
+<li>AVOS Cloud AVOS Cloud</li>
+<li>Bmob  Bmob移动后端云服务平台</li>
+</ol>
+</li>
+<li>应用数据分析<ol>
+<li>友盟 友盟-专业的移动开发者服务平台</li>
+<li>TalkingData TalkingData-专业的无线互联网数据服务平台</li>
+<li>魔方  魔方-移动应用服务平台</li>
+<li>AVOS Cloud Analytics 功能 - AVOS Cloud</li>
+</ol>
+</li>
+<li>移动终端测试<br>  1.Testin Testin云测<br>  2.班墨云测试 全球首款智能云测试系统<br>  3.DroidPilot Android自动化测试工具DroidPilot<br>  4.摩测  e世博,e世博注册首选平台</li>
+<li>应用发布<br>  1.一键云  关于我们<br>  2.抓猫网 抓猫移动广告聚合优化平台</li>
+<li>消息推送<ol>
+<li>极光推送  JPush极光推送</li>
+<li>个推 个推开放平台</li>
+<li>AVOS Cloud Push 功能 - AVOS Cloud</li>
+</ol>
+</li>
+<li>信息识别<br>  1.语义云 首页 (自然语义)<br>  2.慧眼开发平台 <a href="http://smarkeye.mongtx.com/" target="_blank" rel="noopener">http://smarkeye.mongtx.com/</a> (图像)<br>  3.AngelEyes <a href="http://www.angeleyes.it/" target="_blank" rel="noopener">http://www.angeleyes.it/</a> (图像)<br>  4.Face++ Face++ 最好的免费人脸识别云服务 (人脸)<br>  5.Face-API  <a href="http://faceapi.cn/" target="_blank" rel="noopener">http://faceapi.cn/</a> (人脸)</li>
+<li>应用内广告<br>  1.掌淘联盟  <a href="http://appgo.cn/" target="_blank" rel="noopener">http://appgo.cn/</a><br>  2.抓猫网 抓猫移动广告聚合优化平台</li>
+<li>数据<ul>
+<li>聚合数据    专业的数据服务开放平台 <a href="https://www.juhe.cn/" target="_blank" rel="noopener">https://www.juhe.cn/</a></li>
+</ul>
+</li>
+</ul>
+<p>BAAS的技术: What makes all of these services work is the ability to load remote<br>data requests via Ajax.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"disqus_thread"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    <span class="comment">/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO</span></span><br><span class="line"><span class="comment">    YOUR WEBPAGE * * */</span></span><br><span class="line">    <span class="keyword">var</span> disqus_shortname = <span class="string">'remotesynthesis'</span>; <span class="comment">// required:</span></span><br><span class="line">    replace example <span class="keyword">with</span> your forum shortname</span><br><span class="line">    <span class="comment">/* * * DON'T EDIT BELOW THIS LINE * * */</span></span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> dsq = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>); dsq.type =</span><br><span class="line">    <span class="string">'text/javascript'</span>; dsq.async = <span class="literal">true</span>;</span><br><span class="line">    dsq.src = <span class="string">'//'</span> + disqus_shortname + <span class="string">'.disqus.com/</span></span><br><span class="line"><span class="string">    embed.js'</span>;</span><br><span class="line">    (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] || docu</span><br><span class="line">    ment.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(dsq);</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;noscript&gt;Please enable JavaScript to view the</span></span><br><span class="line"><span class="regexp">&lt;a href="https:/</span><span class="regexp">/disqus.com/</span>?ref_noscript<span class="string">"&gt; comments powered by Disqus.&lt;/a&gt; &lt;/noscript&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-3-defining-a-static-website"><a href="#1-3-defining-a-static-website" class="headerlink" title="1.3 defining a static website"></a>1.3 defining a static website</h2><ul>
+<li>各个解决方干的优缺点<ul>
+<li>static web pages of old failed to meet the needs of the Web as websites became more complex and interactive.</li>
+<li>Dynamic sites generally and content management systems specifically solved some of these problems but led to increased complexity in both development and authoring.</li>
+<li>blog engine partially addressed these issues but also took on some of complexity over time.</li>
+<li>Ajax and the rise of services have helped make static pages a viable option again.</li>
+</ul>
+</li>
+<li>static site generator的特点<ul>
+<li>statics site files are delivered to the end user exactly as they are on the server.<ul>
+<li>no server-site generation at runtime.</li>
+</ul>
+</li>
+<li>no server-side language</li>
+<li>no database</li>
+<li>static sites are HTML/CSS/JS</li>
+</ul>
+</li>
+<li>static sites 的benefits<ul>
+<li>Performance</li>
+<li>hosting: github pages,surge</li>
+<li>Security</li>
+<li>content versioning</li>
+</ul>
+</li>
+</ul>
+<h1 id="chapter-2-The-basics-of-static-site-generator"><a href="#chapter-2-The-basics-of-static-site-generator" class="headerlink" title="chapter 2 The basics of  static site generator"></a>chapter 2 The basics of  static site generator</h1><h2 id="2-1-what-are-static-site-generator"><a href="#2-1-what-are-static-site-generator" class="headerlink" title="2.1 what are static site generator"></a>2.1 what are static site generator</h2><ul>
+<li>Comprehensive Lists of Static Site Generators <a href="https://staticsitegenerators.net/" target="_blank" rel="noopener">https://staticsitegenerators.net/</a>    </li>
+<li>template language<ul>
+<li>Liquid</li>
+<li>Jade</li>
+</ul>
+</li>
+<li>site examples:   <a href="https://github.com/remotesynth/Static-Site-Samples" target="_blank" rel="noopener">https://github.com/remotesynth/Static-Site-Samples</a></li>
+</ul>
+<h1 id="chapter-3-popular-site-generators"><a href="#chapter-3-popular-site-generators" class="headerlink" title="chapter 3 popular site generators"></a>chapter 3 popular site generators</h1><ul>
+<li>jekyll sites list: <a href="https://github.com/jekyll/jekyll/wiki/Sites" target="_blank" rel="noopener">https://github.com/jekyll/jekyll/wiki/Sites</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chesterwang.github.io/blog.github.io/2018/01/22/读书-static-site-generators/" data-id="cji8dskgb000bg4emb6rvf668" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog.github.io/tags/static-site-generators-cms/">static site generators, cms</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog.github.io/2018/01/23/读书-Programming-JavaScript-Applications/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          读书-Programming-JavaScript-Applications
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog.github.io/2018/01/21/读书-understaning-ECMAScript-6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">读书-understaning-ECMAScript-6</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog.github.io/tags/static-site-generators-cms/">static site generators, cms</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/blog.github.io/tags/static-site-generators-cms/" style="font-size: 10px;">static site generators, cms</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog.github.io/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog.github.io/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog.github.io/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog.github.io/2018/06/10/DL4j系列-项目概览/">DL4j系列-项目概览</a>
+          </li>
+        
+          <li>
+            <a href="/blog.github.io/2018/02/02/读书-pro-html5-programming/">读书-pro-html5-programming</a>
+          </li>
+        
+          <li>
+            <a href="/blog.github.io/2018/02/02/了解webhook/">了解webhook</a>
+          </li>
+        
+          <li>
+            <a href="/blog.github.io/2018/01/23/读书-Programming-JavaScript-Applications/">读书-Programming-JavaScript-Applications</a>
+          </li>
+        
+          <li>
+            <a href="/blog.github.io/2018/01/22/读书-static-site-generators/">读书-static-site-generators</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Chester Wang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/blog.github.io/fancybox/jquery.fancybox.css">
+  <script src="/blog.github.io/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/blog.github.io/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
