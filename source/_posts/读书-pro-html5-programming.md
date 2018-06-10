@@ -1,7 +1,8 @@
 ---
 title: 读书-pro-html5-programming
 date: 2018-02-02 22:26:58
-tags:
+tags: [ 读书, 前端 ]
+categories: 技术
 ---
 
 http://apress.jensimmons.com/v5/pro-html5-programming/introduction.html

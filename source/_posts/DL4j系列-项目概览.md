@@ -1,7 +1,8 @@
 ---
 title: DL4j系列-项目概览
 date: 2018-06-10 12:36:42
-tags:
+tags: [ 深度学习 ]
+categories: 技术
 ---
 
 
